@@ -1,0 +1,26 @@
+.sidenav{
+    position: fixed;
+    left:0;
+    bottom: 0;
+    width: 25vh;
+    height: 89vh;
+    padding: 2vh;
+    background-color: white;
+    line-height: 1.6rem;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+.progs{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: black;
+}
+
+#progs_current{
+    padding-right: 2vh;
+    background-color: whitesmoke;
+    border-right: 2px solid black;
+    color: turquoise;
+}

@@ -1,1 +1,116 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+
+    <title>Naman Garg 170 XII E Sci.</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/website.css">
+    <link rel="shortcut icon" href="./favicon/favicon.jpg" type="image/x-icon">
+
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172771622-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172771622-1');
+</script>
+
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="logo">
+            <!-- <img src="logo.png" alt="Naman Garg" id="logo" /> -->
+            <p>
+                Naman Garg
+            </p>
+        </div>
+
+        <div class="navbar">
+          <a href="./" class="head_nav current">Home</a>
+          <span class="hoverbutton">
+              <a href="project.html" class="head_nav">Projects
+                  <div class="dropmenu">
+                    <a href="programme.html" class="dropitem">programme</a>
+                    <a href="software.html" class="dropitem">Softwares</a>
+                  </div>
+              </a>
+            </span>
+          <a href="contact.html" class="head_nav">Contact</a>
+        </div>
+    </div>
+
+
+    <div id="showcase">
+        <h1>
+            I am Naman Garg, a Student.
+        </h1>
+    </div>
+
+    <!-- End of navbar and show -->
+
+    <div class="intro">
+        <div class="con1">
+            <div id="School">
+
+            </div>
+            <div class="con2">
+                <p>
+                    I am Naman Garg and currently study in <span class="high">O.S.D.A.V. Public School, Kaithal</span> in 12<sup>th</sup> class.
+                </p>
+            </div>
+        </div>
+        <div class="con1">
+            <div id="pg">
+
+            </div>
+            <div class="con2">
+                <p>
+                    Through this website, I want to <span class="high">showcase my Computer Skills.</span>
+                </p>
+            </div>
+        </div>
+
+
+        
+    </div>
+
+
+    <form name="submit-to-google-sheet">
+        <input name="email" type="radio" placeholder="Email" required>
+        <input name="firstName" type="text" placeholder="First Name">
+        <input name="lastName" type="text" placeholder="Last Name">
+        <button type="submit">Send</button>
+      </form>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyu4Dy5VOwMh63aFEh7GkCKQXhbv6uz2Q4OFRps8WO6dj8YRrQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+
+
+      <a class="topbutton" href="#">
+          <!-- <a href="#top">Hello</a> -->
+          
+      </div>
+</body>
+</html>

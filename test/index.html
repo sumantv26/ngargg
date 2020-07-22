@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Sample Test</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="../favicon/favicon.jpg" type="image/x-icon">
+
+    <script src="javascript/script.js"></script>
+
+</head>
+<body>
+
+    <div class="header">
+      <p>
+        July Sample Test
+      </p>
+    </div>
+
+    
+    <form name="submit-to-google-sheet">
+        <!-- <input name="email" type="radio" placeholder="Email" required> -->
+
+        <div class="q_text">
+          <label for="firstname" class="text required">
+              Firstname
+            </label><br>
+            <input name="firstName" type="text" placeholder="First Name" required>
+
+        </div>
+
+
+        <div class="q_text">
+          <label for="firstname" class="text required">
+              Lastname
+          </label><br>
+          <input name="lastName" type="text" placeholder="Last Name" required>
+
+        </div>
+
+        <div class="q_text">
+          <p>
+            <label for="Q1" class="text">
+                Sample Question
+            </label>
+            <textarea name="Q1" placeholder="Your Answer Here ...."></textarea>
+          </p>
+
+        </div>
+
+        <!-- <label for="Q1" class="text">
+          Q1
+      </label>
+      <input name="Q1" type="text" placeholder="Answer..."><br>
+      <label for="Q2">Q2</label>
+      <input type="radio" name="Q2" value="Option1" placeholder="option" class="raopt">Option1</input><br>
+      <input type="radio" name="Q2" value="Option2" placeholder="option" class="raopt">Option2</input><br>
+      <input type="radio" name="Q2" value="Option3" placeholder="option" class="raopt">Option3</input><br>
+      <input type="radio" name="Q2" value="Option4" placeholder="option" class="raopt">Option4</input><br> -->
+        
+        <button type="submit" class="submit">Submit</button>
+      </form>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyu4Dy5VOwMh63aFEh7GkCKQXhbv6uz2Q4OFRps8WO6dj8YRrQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', window.open("./submitted.html", "_self")))
+            .catch(error => console.error('Error!', alert("Couldnot submit")))
+        })
+      </script>
+
+<!-- <progress value="0" max="10" id="progressBar"></progress> -->
+
+</body>
+</html>
