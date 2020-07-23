@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="../favicon/favicon.jpg" type="image/x-icon">
 
-    <script src="javascript/script.js"></script>
+    <!-- <script src="javascript/script.js"></script> -->
 
 </head>
 <body>
@@ -43,24 +43,38 @@
         </div>
 
         <div class="q_text">
-          <p>
             <label for="Q1" class="text">
                 Sample Question
             </label>
             <textarea name="Q1" placeholder="Your Answer Here ...."></textarea>
-          </p>
-
+            
+ 
         </div>
 
         <!-- <label for="Q1" class="text">
           Q1
-      </label>
-      <input name="Q1" type="text" placeholder="Answer..."><br>
-      <label for="Q2">Q2</label>
-      <input type="radio" name="Q2" value="Option1" placeholder="option" class="raopt">Option1</input><br>
-      <input type="radio" name="Q2" value="Option2" placeholder="option" class="raopt">Option2</input><br>
-      <input type="radio" name="Q2" value="Option3" placeholder="option" class="raopt">Option3</input><br>
-      <input type="radio" name="Q2" value="Option4" placeholder="option" class="raopt">Option4</input><br> -->
+          <input name="Q1" type="text" placeholder="Answer..."><br>
+      </label> -->
+
+      <div class="q_radio">
+        <label for="q_radio">Sample Question 2</label><br>
+        <input type="radio" name="Q2" value="Option1"><label class="raopt">Option1</label><br>
+        <input type="radio" name="Q2" value="Option2"><label class="raopt">Option2</label><br>
+        <input type="radio" name="Q2" value="Option3"><label class="raopt">Option3</label><br>
+        <input type="radio" name="Q2" value="Option4"><label class="raopt">Option4</label><br>
+
+      </div>
+
+<!-- 
+      <div class="q_check">
+        <label for="q_check">Sample Question 3</label><br>
+        <input type="checkbox" name="Q3" value="Option1"><label class="checkopt">Option1</label><br>
+        <input type="checkbox" name="Q3" value="Option2"><label class="checkopt">Option2</label><br>
+        <input type="checkbox" name="Q3" value="Option3"><label class="checkopt">Option3</label><br>
+        <input type="checkbox" name="Q3" value="Option4"><label class="checkopt">Option4</label><br>
+
+      </div>   -->
+
         
         <button type="submit" class="submit">Submit</button>
       </form>

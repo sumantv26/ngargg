@@ -24,7 +24,7 @@ body {
 
 .header{
     background-color: rgb(81, 163, 196);
-    opacity: 0.8;
+    opacity: 0.99;
     color: black;
     font-size: 2rem;
     font-weight: 1000;
@@ -47,6 +47,10 @@ form{
     background-color: whitesmoke;
     min-height: 85vh;
     border: 2px solid #bbb;
+}
+
+.q_text > label, label[for="q_radio"], label[for="q_check"]{
+    font-weight: 700;
 }
 
 .q_text{
@@ -83,17 +87,55 @@ form{
     background-color: oldlace;
 }
 
+
 label.required:after{
     content: "*";
     color: crimson;
     font-size: 2rem;
 }
+/*=====================For radio Button =======================*/
 
+
+.q_radio input{
+    display: inline-block;
+    color: red;
+    margin: 0.5rem 1rem;
+}
+
+label[for="q_radio"]{
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+
+/* .raopt{
+
+} */
+
+/*=====================For Checkbox =======================*/
+
+
+.q_check input{
+    display: inline-block;
+    color: red;
+    margin: 0.5rem 1rem;
+}
+
+label[for="q_check"]{
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+
+/* .raopt{
+
+} */
 
 
 
 
 .submit{
+    margin-top: 2rem;
     font-size: 1.25rem;
     background-color: rgb(81, 163, 196);
     color: ghostwhite;
