@@ -14,6 +14,7 @@
     background: -webkit-linear-gradient(white,dodgerblue,cyan);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
 
@@ -65,6 +66,7 @@
     flex: 1;
     height: 100%;
     background: url(../img/pg.jpeg) no-repeat center bottom/cover;
+    text-align: center;
     border-radius: 1%;
 }
 
