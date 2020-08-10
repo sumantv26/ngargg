@@ -148,12 +148,23 @@ a.mail{
 
 /* End Of Form style */
 
-@media(max-width:615px){
+@media(max-width:700px){
     
     .form_wrap{
         height: 89vh;
+    }
+    .form_con{
+        width: 75vw;
     }
     #pgback{
         height: 88vh;
     }
 }
+
+
+@media(max-height:615px){
+    .form_wrap{
+        height: 615px;
+    }
+}
+

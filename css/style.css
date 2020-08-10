@@ -128,3 +128,9 @@ a{
         right: 4vw;
     }
 }
+
+@media(max-height:615px){
+    .header{
+        height: 15vh !important;
+    }
+}
