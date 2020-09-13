@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+
+html,body{
+    background-color: black;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 1.75rem;
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.Shree{
+    margin-top: 3vh;
+    margin-left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+/* --------------------------- Navbar -----------------------  */
+
+.navbar{
+    position: sticky;
+    position: -webkit-sticky;
+    padding-top: 0.4rem;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.75);
+    height: 10vh;
+    min-height: 60px;
+    /* max-height: 200px; */
+    align-items: center;
+    border-bottom: 0.2px solid rgba(180,180,180,0.39);
+    padding-bottom: 0.5vh;
+    z-index: 10;
+    width: 100%;
+}
+
+.navbtn{
+    color: rgba(180,180,180,0.8);
+    text-decoration: none;
+    border: none;
+    padding: 0 0.75vw;
+    font-size: 1rem;
+    font-weight: 700;
+    display: inline-block;
+    height: 7vh;
+    transition: color 1s ease-out;
+    user-select: none;
+}
+
+.navbtn:hover, .current{
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+#dropbtn:hover{
+    cursor: default;
+}
+
+.logo{
+    display: inline-block;
+    width: 240px;
+    height: 60px;
+    background: url("../../images/garuda/home/garudalinux2.png") center center/cover;
+    margin-right: 2vw;
+}
+
+.dropdown-content{
+    display: none;
+}
+
+.dropdown-content a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border: none;
+    padding: 2vh 0.5vw;
+    color: rgba(180,180,180,0.8);
+    font-size: 1rem;
+    border-bottom: 0.2px solid rgba(180,180,180,0.25);
+    transition: all 1s ease-out;
+}
+
+.dropdown-content a:hover{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.dropdown:hover .navbtn{
+    color: white;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    position: absolute;
+    right: 0;
+    padding-top: 2vh;
+    margin-top: -2vh;
+}
+
+
+/* ----------------------------- End of Header ---------------------- */
+
+
+.footer{
+    border-top: 0.5px solid rgba(180,180,180,0.8);
+    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.footer a{
+    padding-left: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* ----------------------------------- End of Footer ----------------------------- */
+
+/* ------------------------------------- End of Page ------------------------------ */
+
+.fa-gitlab{
+    color: #fc6d26;
+}
+.fa-telegram{
+    color: #0088cc !important;
+}
+.fa-twitter{
+    color: #00acee !important;
+}
+
+/* -------------------------------------- Queries ------------------------------  */
+
+@media(max-width:700px){
+    html,body{
+        font-size: 18px;
+    }
+
+    .navbar{
+    padding-top: 0.1rem;
+    height: 14vh;
+    min-height: 85px;
+    padding-bottom: 0vh;
+    z-index: 10;
+    width: 100%;
+    flex-direction: column;
+}
+    .navbtn{
+        border-bottom: none;
+        padding: 0 0.8vw;
+        font-size: 0.82rem;
+        font-weight: 700;
+        display: inline-block;
+        height: 5vh;
+        transition: color 1s ease-out;
+        user-select: none;
+    }
+}
+
+@media(max-height:550px){
+    .navbtn{
+        border: none;
+    }
+    .navbtn:hover, .current{
+        border-bottom: none;
+    }
+}
+
+@supports ((-webkit-backdrop-filter: blur(1.9rem)) or (backdrop-filter: blur(1.9rem))) {
+	.navbar {
+        background-color: rgba(0,0,0,0.1);
+	  -webkit-backdrop-filter: blur(1.9rem);
+	  backdrop-filter: blur(1.9rem);
+	}
+}

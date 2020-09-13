@@ -1,0 +1,152 @@
+
+
+ul.download{
+    font-weight: 550;
+    margin: 5rem 1rem;
+    margin-bottom: 20vh;
+}
+
+ul.download li a{
+    color: dodgerblue;
+}
+
+
+.distintro{
+    width: 80%;
+    height: auto;
+    margin: auto;
+
+}
+
+ul.distros{
+  list-style-type: none;
+  margin-bottom: 8rem;
+}
+
+.dist{
+  display: flex;
+  flex-direction: row;  /* important for @media */
+  margin: 4rem 0.5rem;
+}
+
+.distro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.laptop {
+  width: 50vw;
+  height: auto;
+  margin: auto;
+  margin-bottom: 0 !important;
+  border: 9px solid #ddd;
+  border-radius: 12px 12px 0 0;
+}
+  
+  
+.bottom {
+  width: 60vw;
+  height: 12px;
+  border-radius: 0 0 25px 25px;
+  border-top: 5px solid white;
+  border-bottom: 1px solid black;
+  background: #bbb;
+  z-index: 1;
+  margin-top: 0 !important;
+
+}
+
+.distdesc{
+  text-align: center;
+}
+
+
+/* ------------------------------- Download Dropdown ----------------------- */
+
+.downloadlinks{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8rem;
+}
+
+.drpdown{
+  flex: 1;
+}
+.drpbtn {
+  background-color: white;
+  width: 100%;
+	color: black;
+	padding: 16px;
+  font-size: 16px;
+  border: 2px solid black;
+  }
+  
+  .drpdown {
+	position: relative;
+	display: inline-block;
+  }
+
+  .drpdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+ 
+  .drpdown-content a {
+    color: black;
+  width: 49vw;
+	text-decoration: none;
+	display: block;
+  }
+  
+
+  .drpdown-content a:hover {background-color: #ddd;}
+  
+
+  .drpdown:hover .drpdown-content {display: block;}
+  
+
+  .drpdown:hover .drpbtn {background-color: #eee;}
+
+  .dwnlinks{
+    text-align: center;
+    padding: 0.25rem 5rem;
+    text-align: center;
+  }
+
+
+  /* ---------------------------- Drop up -------------------------- */
+
+
+
+
+@media(max-width:999px){
+  .dist{
+    flex-direction: column;
+  }
+
+  .laptop{
+    width: 80vw;
+  }
+  .bottom{
+    width: 92.5vw;
+  }
+}
+
+@media(max-width:700px){
+  .downloadlinks{
+    flex-direction: column;
+    text-align: center;
+  }
+  .drpdown-content a {
+    padding: 0.01rem;
+    width: 100vw;
+  }
+}
