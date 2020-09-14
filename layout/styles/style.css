@@ -80,7 +80,7 @@ html,body{
     display: block;
     color: white;
     text-decoration: none;
-
+    background-color: rgba(0,0,0,0.8);
     border: none;
     padding: 2vh 0.5vw;
     color: rgba(180,180,180,0.8);
@@ -179,7 +179,7 @@ html,body{
 }
 
 @supports ((-webkit-backdrop-filter: blur(1.9rem)) or (backdrop-filter: blur(1.9rem))) {
-	.navbar,.dropdown-content a{
+	.navbar{
         background-color: rgba(0,0,0,0.4);
 	  -webkit-backdrop-filter: blur(1.9rem);
 	  backdrop-filter: blur(1.9rem);
