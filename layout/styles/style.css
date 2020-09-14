@@ -28,7 +28,7 @@ html,body{
 .navbar{
     position: sticky;
     position: -webkit-sticky;
-    padding-top: 0.4rem;
+    padding: 1.25rem;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -37,8 +37,7 @@ html,body{
     min-height: 60px;
     /* max-height: 200px; */
     align-items: center;
-    border-bottom: 0.2px solid rgba(180,180,180,0.39);
-    padding-bottom: 0.5vh;
+    border-bottom: 2px solid rgb(27,170,255);
     z-index: 10;
     width: 100%;
 }
@@ -57,7 +56,7 @@ html,body{
 }
 
 .navbtn:hover, .current{
-    border-bottom: 2px solid white;
+    /* border-bottom: 2px solid white; */
     color: white;
 }
 
@@ -81,7 +80,7 @@ html,body{
     display: block;
     color: white;
     text-decoration: none;
-    background-color: black;
+
     border: none;
     padding: 2vh 0.5vw;
     color: rgba(180,180,180,0.8);
@@ -112,9 +111,9 @@ html,body{
 
 
 .footer{
-    border-top: 0.5px solid rgba(180,180,180,0.8);
-    padding-top: 2rem;
-    margin-top: 2rem;
+    /* border-top: 0.5px solid rgba(180,180,180,0.8); */
+    padding-top: 3rem;
+    margin-top: 4rem;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -141,13 +140,13 @@ html,body{
 
 /* -------------------------------------- Queries ------------------------------  */
 
-@media(max-width:700px){
+@media(max-width:725px){
     html,body{
         font-size: 18px;
     }
 
     .navbar{
-    padding-top: 0.1rem;
+    padding: 0.1rem;
     height: 14vh;
     min-height: 85px;
     padding-bottom: 0vh;
@@ -177,8 +176,8 @@ html,body{
 }
 
 @supports ((-webkit-backdrop-filter: blur(1.9rem)) or (backdrop-filter: blur(1.9rem))) {
-	.navbar {
-        background-color: rgba(0,0,0,0.1);
+	.navbar,.dropdown-content a{
+        background-color: rgba(0,0,0,0.4);
 	  -webkit-backdrop-filter: blur(1.9rem);
 	  backdrop-filter: blur(1.9rem);
 	}

@@ -55,8 +55,8 @@
 }
 
 ol,ul{
-    margin-left: 1rem;
-    margin-right: 4vw;
+    padding-left: 2rem;
+    padding-right: 1.25rem;
 }
 
 ol li h5, ul li h5{
