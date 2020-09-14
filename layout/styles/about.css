@@ -18,6 +18,10 @@ h2{
     height: auto;
 }
 
+ul.cards{
+    list-style-type : none
+ }
+
 .aboutcard{
     text-align: center;
     width: 100%;
