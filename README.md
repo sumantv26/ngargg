@@ -1,3 +1,3 @@
 # garuda
 
-garudalinux.in website code
+https://garudalinux.org website code

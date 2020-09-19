@@ -11,7 +11,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/garuda/home/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <meta http-equiv = "refresh" content = "1; url = https://garudalinux.org" />
+
+    <meta name="robots" content="all,follow">
+    <meta name="keywords" content="Garuda Linux, Home, Arch based, Linux distro, Indian">
 
     <link rel="apple-touch-icon" sizes="57x57" href="images/garuda/home/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/garuda/home/apple-icon-60x60.png">
@@ -38,6 +40,24 @@
     <title>Garuda Linux | Home</title>
 
 
+    <!-- Matomo -->
+<script type="text/javascript">
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//matomo.garudalinux.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+  <!-- End Matomo Code -->
+  
+
+
 </head>
 
 <body>
@@ -57,7 +77,7 @@
     
                 <a href="index.html" class="navbtn current">Home</a>
                 <a href="downloads.html" class="navbtn">Download</a>
-                <a href="https://forum.garudalinux.in/" class="navbtn" target="_blank">Forum</a>
+                <a href="https://forum.garudalinux.org/" class="navbtn" target="_blank">Forum</a>
                 <a href="about.html" class="navbtn">About</a>
         
                 <!-- ---------------------- Navigation Dropdown ------------------- -->
@@ -67,7 +87,7 @@
                     <p class="navbtn" id="dropbtn"> Support </button>
         
                         <div class="dropdown-content">
-                            <a href="https://wiki.garudalinux.in/" target="_blank"><i class="fa fa-fw fa-newspaper-o"></i>Wiki</a>
+                            <a href="https://wiki.garudalinux.org/" target="_blank"><i class="fa fa-fw fa-newspaper-o"></i>Wiki</a>
                             <a href="https://lonewolf.pedrohlc.com/chaotic-aur/"><i class="fa fa-fw fa-file-zip-o"></i>Package Repository</a>
                         </div>
                     </button>
@@ -97,12 +117,15 @@
             <h4>
                 And choose your Desktop Environment From
                 <br>
-                KDE, GNOME, Cinnamon, Xfce, Wayfire, LXQt-kwin, Deepin, i3wm.
+                KDE, GNOME, Xfce, Cinnamon, MATE, LXQt-kwin, Deepin, Wayfire, BSPWM, i3wm.
             </h4>
+            <p><a href="downloads.html"><i class="fa fa-download"></i></a></p>
+            <a href="https://gitlab.com/groups/garuda-linux/" target="_blank"><i class="fa fa-gitlab"></i></a>
             <a href="https://telegram.me/garudalinux" data-toggle="tooltip" title="Telegram" target="_blank" ><i class="fa fa-telegram"></i> </a>
             <a href="https://twitter.com/garudalinux" data-toggle="tooltip" title="Twitter" target="_blank"><i class="fa fa-twitter"></i> </a> 
-            <a href="downloads.html"><i class="fa fa-download"></i></a>
-            <a href="https://gitlab.com/groups/garuda-linux/" target="_blank"><i class="fa fa-gitlab"></i></a>
+            
+            
+            
         </div>
         
     </div>
@@ -195,14 +218,16 @@
             Features
         </h2>
         <ol type="1">
-            <br><li>The Linux-zen kernel.</li>
+            <br><li>Linux-zen A faster more responsive kernel.</li>
             <br><li>BTRFS as the default filesytem with zstd compression.</li>
-            <br><li>Automatic Timeshift snapshots before system upgrades.</li>
-            <br><li>Easy to install, setup and use (Calamares installer).</li>
+            <br><li>Improved I/O performance, CPU Performance Governer, Zram enabled By Default, Nohang A oom prevention daemon, Preload Loads Frequently used apps to Ram, Ananicy Automatically sets nice levels</li>
+            <br><li>Automatic Snapshots before system upgrades.</li>
             <br><li>A custom-themed desktop experience that is easy on the eyes and out of your way.</li>
+            <br><li>Easy to install, setup and use (Calamares installer).</li>
             <br><li>GUI for managing drivers and the kernel (Garuda Settings Manager).</li>
+            <br><li>GUI tools for snapshot management (Timeshift).</li>
+            <br><li>GUI tools for Network Assistant (Garuda Network Assistant).</li>
             <br><li>Proprietary Nvidia driver support: select the 'driver=nonfree' GRUB option at startup.</li>
-            <br><li>GUI tools for snapshot management (Timeshift, Garuda Boot Repair).</li>
             <br><li>
 
                 <p><strong>Gaming Edition</strong></p>
