@@ -5,6 +5,7 @@
     width: 98vw;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 0 !important;
     background: url("../../images/garuda/bg/garuda.jpg") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
@@ -18,6 +19,7 @@
     text-align: center;
     background-color: rgba(50,50,50,0.3);
     backdrop-filter: blur(10px);
+    padding-left: 2rem;
 }
 
 .cover_text h1{
