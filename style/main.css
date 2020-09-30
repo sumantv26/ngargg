@@ -2,7 +2,7 @@
     text-align: center;
     min-height: 85vh;
     margin-top: 0.1rem;
-    width: 98vw;
+    width: 98.9vw;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0 !important;
@@ -57,7 +57,7 @@
 }
 
 ol,ul{
-    padding-left: 2rem;
+    padding-left: 1.75rem;
     padding-right: 1.25rem;
 }
 
