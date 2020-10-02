@@ -90,12 +90,13 @@ ul.distros{
   }
 
   .drpdown-content {
-	display: none;
+  /* display: none; */
+  visibility: hidden;
 	position: absolute;
 	background-color: #f1f1f1;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
+  z-index: 1;
   }
   
  
@@ -111,7 +112,10 @@ ul.distros{
   .drpdown-content a:hover {background-color: #ddd;}
   
 
-  .drpdown:hover .drpdown-content {display: block;}
+  .drpdown:hover .drpdown-content {
+    visibility: visible;
+    animation: rolldown 0.45s 1;  
+  }
   
 
   .drpdown:hover .drpbtn {background-color: #eee;}
@@ -127,10 +131,7 @@ ul.distros{
   }
 
 
-  /* ---------------------------- Drop up -------------------------- */
-
-
-
+/* ----------------------------- Responsive -------------------------------------- */
 
 @media(max-width:999px){
   .dist{
