@@ -36,6 +36,10 @@ ul.distros{
   justify-content: space-around;
 }
 
+h2{
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
 .laptop {
   width: 50vw;
   height: auto;
@@ -137,7 +141,6 @@ ul.distros{
   .dist{
     flex-direction: column;
   }
-
   .laptop{
     width: 80vw;
   }
