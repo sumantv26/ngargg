@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
 
@@ -46,8 +46,12 @@
 
     <!-- -------------------CSS------------------------------------ -->
     
-    <link rel="stylesheet" href="style/style.css" type="text/css" />
-    <link rel="stylesheet" href="style/main.css" type="text/css" />
+    <link rel='stylesheet'  type="text/css"  media='screen and (min-width: 725px)' href='style/styleg725.css' />
+    <link rel='stylesheet'  type="text/css"  media='screen and (min-width: 550px) and (max-width: 724px)' href='style/stylebw550724.css' />
+    <link rel='stylesheet'  type="text/css"  media='screen and (max-width: 549px)' href='style/stylel549.css' />
+    <link rel='stylesheet'  type="text/css"  media='screen and (min-width: 725px)' href='style/maing725.css' />
+    <link rel='stylesheet'  type="text/css"  media='screen and (min-width: 550px) and (max-width: 724px)' href='style/mainbw550724.css' />
+    <link rel='stylesheet'  type="text/css"  media='screen and (max-width: 549px)' href='style/mainl549.css' />
 
     <!-- ----------------------Load External CSS ------------------ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -158,6 +162,19 @@
         </div>
         
     </div>
+
+    <div class="translate">
+        <center>
+            <div id="google_translate_element" style="display: inline;"></div>
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+            </script>
+            
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </center>
+    </div>    
     
     <!-- ------------------------------- End Of Cover --------------------------- -->
     
@@ -243,6 +260,7 @@
 	</ol>
 	</ul>
     </div>
+
 
 
     <!-- ---------------------------- End of Features ------------------------------  -->

@@ -1,0 +1,134 @@
+ul.download{
+    font-weight: 550;
+    margin: 5rem 1rem;
+    margin-bottom: 20vh;
+}
+
+ul.download li a{
+    color: dodgerblue;
+}
+
+.distintro{
+    width: 80%;
+    height: auto;
+    margin: auto;
+
+}
+
+ul.distros{
+  list-style-type: none;
+  margin-bottom: 8rem;
+}
+
+.dist{
+  display: flex;
+  flex-direction: row;  /* important for @media */
+  margin: 4rem 0.5rem;
+}
+
+.distro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h2{
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+.laptop {
+  width: 50vw;
+  height: auto;
+  margin: auto;
+  margin-bottom: 0 !important;
+  border: 9px solid #ddd;
+  border-radius: 12px 12px 0 0;
+} 
+.bottom {
+  width: 60vw;
+  height: 12px;
+  border-radius: 0 0 25px 25px;
+  border-top: 5px solid white;
+  border-bottom: 1px solid black;
+  background: #bbb;
+  z-index: 1;
+  margin-top: 0 !important;
+
+}
+
+.distdesc{
+  text-align: center;
+}
+
+/* ------------------------------- Download Dropdown ----------------------- */
+
+.downloadlinks{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8rem;
+  flex-direction: row;
+  text-align: center;
+}
+
+.drpdown{
+  flex: 1;
+}
+
+.drpbtn{
+  background-color: white;
+  width: 100%;
+	color: black;
+	padding: 16px 0;
+  font-size: 16px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.drpbtn,.dwnlinks{
+  background: linear-gradient(white 30%,rgb(100,100,100) 50%,white 30%);
+  background-size: 100% 400%;
+  background-position: 0 100%;
+  /* animation: he 2s 1; */
+}
+
+.drpbtn:hover,.dwnlinks:hover{
+  background-position: 0 10%;
+  transition: all 0.7s ease-in;
+}
+
+.drpdown-content{
+  display: none;
+  position: relative;
+}
+
+.drpdown-content a{
+  display: block;
+}
+
+.drpdown:hover > div{
+  z-index: 4;
+  display: block;
+  background: white;
+  color: black;
+  animation: rolldown 0.7s 1;  
+}
+
+  .sidenav~*{
+    padding-left: 2.5rem;
+  }
+
+/* ----------------------------- Responsive -------------------------------------- */
+
+@media(max-width:999px){
+  .dist{
+    flex-direction: column;
+  }
+  .laptop{
+    width: 80vw;
+  }
+  .bottom{
+    width: 92.5vw;
+  }
+}

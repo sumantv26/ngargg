@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+
+html,body{
+    background-color: black;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 1.75rem;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.Shree{
+    margin-left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+/* --------------------------- Navbar -----------------------  */
+
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.75);
+    align-items: center;
+    border-bottom: 2px solid rgb(27,170,255);
+    z-index: 10;
+    padding: 0.1rem;
+    height: 14vh;
+    min-height: 85px;
+    padding-bottom: 0vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.navbtn{
+    color: rgba(180,180,180,0.8);
+    text-decoration: none;
+    border: none;
+    user-select: none;
+    border-bottom: none;
+    padding: 0 0.8vw;
+    font-size: 0.82rem;
+    font-weight: 700;
+    display: inline-block;
+    height: 5vh;
+    transition: color 1s ease-out;
+}
+
+.navbtn:hover, .current{
+    color: white;
+    border-bottom: none;
+}
+
+#dropbtn:hover{
+    cursor: default;
+}
+
+.logo{
+    display: inline-block;
+    width: 240px;
+    height: 60px;
+    background: url("../../images/garuda/home/garudalinux2.png") center center/cover;
+    margin-right: 2vw;
+}
+
+.dropdown-content{
+    display: none;
+}
+
+.dropdown-content a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.8);
+    border: none;
+    padding: 2vh 0.5vw;
+    color: rgba(180,180,180,0.8);
+    font-size: 1rem;
+    border-bottom: 0.2px solid rgba(180,180,180,0.25);
+    transition: all 1s ease-out;
+}
+
+.dropdown-content a:hover{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.dropdown:hover .navbtn{
+    color: white;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    position: absolute;
+    right: 0;
+    padding-top: 2vh;
+    margin-top: -2vh;
+    animation: rolldown 0.4s 1;
+}
+
+
+/* ----------------------------- End of Header ---------------------- */
+
+/* ----------------------------  Side Navigation Menu --------------------- */
+
+.sidenav{
+    font-size: 1.25rem;
+    position: fixed;
+    left: 0;
+    top: 50vh;
+    margin-top: -5rem;
+    border-radius: 2px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 5;
+}
+
+
+
+.sidelinks{
+    z-index: 20;
+    padding: 0.75rem 0.5rem 0.75rem 0.2rem;
+    border: 3px solid;
+    border-left: 2rem;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    background-color: white;
+    text-decoration: none;
+    color: inherit;
+    margin-left: -4rem;
+    max-width: 6.25rem;
+    transition: all 1s ease;
+}
+
+.sidedwn{
+    color: black;
+    animation: rollup 1.25s 1;
+}
+
+.sidedwn:hover{
+    color: white !important;
+    background-color: #000000 !important;
+}
+
+.sidegit{
+    color: #fc6d26;
+    animation: rollup 1.55s 1;
+}
+.sidegit:hover{
+    color: white !important;
+    background-color: #fc6d26 !important;
+}
+
+.sidetele{
+    color: #0088cc !important;
+    animation: rollup 2s 1;
+}
+.sidetele:hover{
+    color: white !important;
+    background-color: #0088cc !important;
+}
+
+.sidetwit{
+    color: #00acee !important;
+    animation: rollup 2.3s 1;
+}
+.sidetwit:hover{
+    color: white !important;
+    background-color: #00acee !important;
+}
+
+.hidden{
+    display: inline-block;
+    font-size: 0.8rem;
+    width: 4rem;
+}
+
+.sidelinks:hover{
+    border: 1px solid;
+}
+
+.sidenav~*{
+    padding-left: 1.85rem;
+}
+
+/* --------------------------- End of Side Navigation Menu ------------------ */
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    background-color: white;
+    margin-top: 4rem;
+    text-align: center;
+    flex-direction: column;
+    padding: 3rem 0 1rem 0;
+}
+
+.footer a{
+    padding-left: 1rem;
+    color: black;
+    text-decoration: none;
+}
+.footer a[href="https://fosshost.org"]{
+    padding-top: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    border-top: 1px solid black;;
+}
+
+/* ----------------------------------- End of Footer ----------------------------- */
+/* ------------------------------------- End of Page ------------------------------ */
+
+/* ---------------------------- Animations -------------------------- */
+
+  @keyframes rollup {
+    0%   { margin-top: 27.5rem;margin-bottom: -27.5rem; opacity: 0;}
+    50% { margin-top: 27.5rem;margin-bottom: -27.5rem;opacity: 0;}
+    100% {margin-top: 0;margin-bottom: 0;opacity: 1;}
+  }
+
+  @keyframes letter {
+    0%{margin-top: 8rem;margin-bottom: -8rem;opacity: 0;}
+    100%{opacity: 1;}
+}
+@media(hover:hover){
+    @keyframes rolldown{
+        0% { margin-top: -3rem;opacity: 0;filter: blur(3px);}
+        100% { opacity: 1;}
+      }
+      .sidelinks:hover{
+        margin-left: 0;
+        border: 1px solid;
+    }
+}
+
+@media(hover:none){
+    @keyframes rolldown{
+        0% { padding-top: 1.75rem;opacity: 0;filter: blur(3px);}
+        100% { opacity: 1;}
+    }
+}
+/* ------------------------- Blur -------------------- */
+@supports ((-webkit-backdrop-filter: blur(1.9rem)) or (backdrop-filter: blur(1.9rem))) {
+	.navbar,.blur{
+        background-color: rgba(0,0,0,0.4);
+	  -webkit-backdrop-filter: blur(1.9rem);
+	  backdrop-filter: blur(1.9rem);
+	}
+}
+
+ 
+.goog-logo-link {
+    opacity:0.01 !important;
+}   
+.goog-te-gadget{
+    color: transparent !important;
+}
+
+#google_translate_element>*>*>*{
+    color:white;
+    background-color: black;
+    font-size: 1rem;
+    border: 2px solid white;
+    padding: 0.5rem;
+    display: block;
+    margin-bottom: -2rem;
+}
+.translate{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+#google_translate_element>*>*>*:hover{
+    background-color: #333333 !important;
+    transition: all 0.5s ease;
+}
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+} 
