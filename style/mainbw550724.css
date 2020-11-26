@@ -78,19 +78,11 @@ ul{
 }
 .scards{
     padding: 8rem 3rem;
-    /* clip-path: polygon(0 10vw, 100% 0, 100% 90vw, 0 100%); */
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
     background-color: black;
     background-image: linear-gradient(0.4turn, black, black,black,purple);
     margin-bottom: -8rem;
     transition: all 1s ease;
-}
-.scards:hover{
-    clip-path: polygon(0 11vw, 100% 0, 100% 89vw, 0 100%);
-    padding-bottom: 8.5rem;
-}
-.scards:hover+div{
-    clip-path: polygon(0 11vw, 100% 0, 100% 90vw, 0 100%);
-    padding-top: 7.5rem;
 }
 
 .scards:nth-child(odd){
