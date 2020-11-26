@@ -52,7 +52,6 @@
     <link rel='stylesheet'  type="text/css"  media='screen and (min-width: 725px)' href='style/maing725.css' />
     <link rel='stylesheet'  type="text/css"  media='screen and (min-width: 550px) and (max-width: 724px)' href='style/mainbw550724.css' />
     <link rel='stylesheet'  type="text/css"  media='screen and (max-width: 549px)' href='style/mainl549.css' />
-    <link rel="stylesheet"  type="text/css"  href="./style/diwalispecial.css">
 
     <!-- ----------------------Load External CSS ------------------ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -145,36 +144,6 @@
 
         <!-- ---------------------------------- Copy From Here To Other Pages --------------------- -->
 
-        <div class="bomb-rocket"></div>
-        <div class="bomb-rocket"></div>
-        <div class="bomb-rocket"></div>
-        <div class="bomb-rocket"></div>
-        <div class="bomb-rocket"></div>
-        <div class="bomb-rocket"></div>
-        <div class="bomb-rocket"></div>
-        <div class="bomb-rocket"></div>
-        <div class="bomb-rocket"></div>
-        <div class="bomb-rocket"></div>
-        <div class="bomb-rocket"></div>
-        <div class="bomb-rocket"></div>
-        <div class="bomb-rocket"></div>
-        <div class="bomb-rocket"></div>
-        <div class="bomb-rocket"></div>
-        <div class="normal-rocket"></div>
-        <div class="normal-rocket"></div>
-        <div class="normal-rocket"></div>
-        <div class="normal-rocket"></div>
-        <div class="normal-rocket"></div>
-        <div class="normal-rocket"></div>
-        <div class="normal-rocket"></div>
-        <div class="normal-rocket"></div>
-        <div class="normal-rocket"></div>
-        <div class="normal-rocket"></div>
-        <div class="normal-rocket"></div>
-        <div class="normal-rocket"></div>
-        <div class="normal-rocket"></div>
-        <div class="normal-rocket"></div>
-        <div class="normal-rocket"></div>
         <div class="cover">
             <div class="cover_text">
                 <h5>
@@ -209,6 +178,53 @@
     
     <!-- ------------------------------- End Of Cover --------------------------- -->
     
+    <div class="spotlights">
+        <h1>Special Spotlights</h1>
+        <div class="scards" id="first_scards">
+            <h2>Easy Installation</h2>
+            <img src="./images/garuda/ss/calameres.png" alt="Calamares">
+            <p>We make the install process simple by using the Calamares installer which is both easy to use and makes the installation process fast.</p>
+            <p>Garuda Linux strives hard to provide better out of the box support for various drivers.</p>
+            <p>For proprietary Nvidia driver support: select the 'driver=nonfree' GRUB option at startup.</p>
+        </div>
+        <div class="scards">
+            <h2>Automatic snapshots Out of Box using Timeshift</h2>
+            <img src="./images/garuda/ss/timeshift.png" alt="Timeshift">
+            <p style="display: list-item; list-style-type: circle; list-style-position: inside;">You can access 5 latest snapshots directly from GRUB </p>        
+            <p>While being a rolling release distro our goal is to ensure that your system will not be left in an unbootable state after a problematic update. Thus we use the BTRFS filesystem integrated with Timeshift, which employs an automatic snapshot feature which backs up the system configuration before each update.*</p>
+
+        </div>
+        <div class="scards">
+            <h2>GUI Software for package management (Pamac).</h2>
+            <img src="./images/garuda/ss/pamac.png" alt="Pamac">
+        </div>
+
+        <div class="scards">
+            <h2>GUI for managing drivers and the kernel (Garuda Settings Manager).</h2>
+            <img src="./images/garuda/ss/garuda-settings-manager.png" alt="Garuda Settings Manager">
+        </div>
+        <div class="scards">
+            <h2>GUI tools for various common tasks and welcome app (Garuda Welcome).</h2>
+            <img src="./images/garuda/ss/garuda-welcome.png" alt="Garuda Welcome">
+        </div>
+
+        <div class="scards">
+        <h2>GUI tools for network assistance (Garuda Network Assistant).</h2>
+        <img src="./images/garuda/ss/garuda-network-manager.png" alt="Garuda Network Assistant">        
+        </div>
+
+        <div class="scards">
+            <h2>Unleash the beauty</h2>
+            <img src="" alt="Screenshot">
+            <p>With handpicked themes, fish shell and beautiful blur effects out of box, Garuda Linux never lets you down.</p>
+        </div>
+        <div class="scards">
+            <h2>BTRFS as the default filesytem with zstd compression.</h2>
+            <img src="" alt="BTRFS">
+            <p>BTRFS is a modern copy on write (CoW) filesystem for Linux aimed at implementing advanced features while also focusing on fault tolerance, repair and easy administration.</p>
+        </div>
+    </div>
+<!-- 
     <div class="container why_Garuda">
         <h2>Why Use Garuda Linux</h2>
 
@@ -223,36 +239,20 @@
                 <p>Garuda Linux is a rolling release distro based on Arch Linux which ensures always getting the latest software updates.</p>
                 <p>We use only one extra repo on top of Arch Linux repos placing us very close to Arch Linux without having to install the system with CLI.</p>
 
-	<br><li><h4>Easy Installation</h4></li>
-	
-        <p>We make the install process simple by using the Calamares installer which is both easy to use and makes the installation process fast, taking you less time to get going.</p>
-                               
-        <br><li><h4>Automatic Driver Installation</h4></li>
-        <p>Garuda Linux strives to provide better out of the box support for various drivers.</p>
-        <p>For proprietary Nvidia driver support: select the 'driver=nonfree' GRUB option at startup.</p>
-        
-            <br><li><h4>Ease of use</h4></li>
-        
-                <p>We use micro as default terminal-based text editor that aims to be easy to use and intuitive while taking advantage of the capabilities of modern terminals.</p>
+        <br><li><h4>Ease of use</h4></li>
+        <p>We use micro as default terminal-based text editor that aims to be easy to use and intuitive while taking advantage of the capabilities of modern terminals.</p>
         <p>Garuda Linux offers you GUI tools for managing system settings out of the box to make your jumpstart easier.</p>
-            <ol type="1">
-        <br><li>GUI for managing drivers and the kernel (Garuda Settings Manager).</li>
-        <br><li>GUI for snapshot management (Timeshift).</li>
-        <br><li>GUI for package management (Pamac).</li>
-        <br><li>GUI tools for various common tasks and welcome app (Garuda Welcome).</li>
-        <br><li>GUI tools for network assistance (Garuda Network Assistant).</li>
-        
+    <ol type="1">
+
     </ol>
-        
         <br><li><h4>Beautiful looking</h4></li>
-            
             <p>A custom-themed desktop experience that is easy on the eyes and out of your way.</p>
             <p>ZSH as default shell with oh-my-zsh and powerlevel10k theme.</p>
             
             <br><li><h4>Gaming Edition</h4></li>
         <p>Today, Linux is becoming a platform of choice for gaming. We provide specialized Ultimate editions for this purpose - our Ultimate editions are offering almost everything that a Linux gamer might want, out-of-the-box.</p>
             </ul>
-            </div>
+            </div> -->
 <!-- ------------------------------- End WHY USE GARUDA --------------------------- -->
     <div class="container features">
 
@@ -270,27 +270,17 @@
 		<p>Our goal is to provide a distro that focuses only on performance while making it beautiful. Thats why we have made some (sane) performance tweaks.</p>
 				
 	<ol type="1">
-                <br><li>Improved I/O performance.</li>
-                <br><li>Automatic CPU frequency scaling depending on load.</li>
-                <br><li>ZRAM enabled by default.</li>
-                <br><li>Nohang, an OOM prevention daemon.</li>
-                <br><li>As well as Ananicy, which automatically sets nice levels on your system.</li>
+        <br><li>Improved I/O performance.</li>
+        <br><li>Automatic CPU frequency scaling depending on load.</li>
+        <br><li>ZRAM enabled by default.</li>
+        <br><li>Nohang, an OOM prevention daemon.</li>
+        <br><li>As well as Ananicy, which automatically sets nice levels on your system.</li>
 	</ol>
 	
-	<br><li><h4>BTRFS as the default filesytem with zstd compression.</h4></li>
-    <p>BTRFS is a modern copy on write (CoW) filesystem for Linux aimed at implementing advanced features while also focusing on fault tolerance, repair and easy administration.</p>
 
-	<br><li><h4>Automatic Snapshots</h4></li>
-
-	<ol type="1">
-		<br><li>While being a rolling release distro our goal is to ensure that your system data will always be safe. Thus we use the BTRFS filesystem, which employs an automatic snapshot feature which backs up the system with each update.</li>
-                <br><li>By default we take these snapshots using Timeshift and grub-btrfs prior to every upgrade while keeping a maxmimum of 5 snapshots.</li>
-                <br><li>With Garuda Linux you don't have to fear rolling release and bad upgrades causing problems for your system. Even if you experience some problems due to updates there is no reason to worry.</li>
-                <br><li>You can easily boot into the Timeshift BTRFS snapshot of your system by first selecting it from the GRUB menu and opening Timeshift after booting to restore the working system snapshot in seconds.</li>
-                <br><li>The advantage of using BTRFS snapshots is that it takes a very small amount of space for snapshots. The process of taking snapshots and its restoration is instant.</li>
-	</ol>
 	</ul>
     </div>
+    <h6 style="margin-left:2rem;margin-top: 2rem;">*Garuda Linux does not imply that Timeshift and BTRFS are a full backup solution. If you wish to ensure your data's security you must implement your own full data backup regimen. Garuda is not responsible in any way or manner if a data loss occurs. The user is soley responsible for ensuring the safety of their own data. Likewise, Garuda cannot guarantee that Timeshift can recover your system to a functional state in the event of a serious system breakage.</h6>
 
 
 
@@ -309,6 +299,7 @@
         </div>
         <a href="https://fosshost.org" rel="noopener noreferrer"  target="_blank" ><img src="./images/fosshost.png" alt="https://fosshost.org"  width="300px"> </a>
     </div>
+    <a href="https://fosshost.org/donate" target="_blank" rel="noopener noreferrer" style="display: block;background-color: white;color: black;text-align:center;font-weight: 800;font-size:1.5rem;padding-bottom: 1rem;padding-top:1rem;">Donate to FOSSHOST</a>
 
 
 </body>

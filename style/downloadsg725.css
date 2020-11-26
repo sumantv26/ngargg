@@ -90,7 +90,6 @@ h2{
   background: linear-gradient(white 30%,rgb(100,100,100) 50%,white 30%);
   background-size: 100% 400%;
   background-position: 0 100%;
-  /* animation: he 2s 1; */
 }
 
 .drpbtn:hover,.dwnlinks:hover{

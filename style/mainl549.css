@@ -71,3 +71,38 @@ ol li{
 ul{
     list-style-type: square;
 }
+
+/* ------------ Special features - Scards ---------- */
+.spotlights{
+    margin: 5rem 0;
+    padding-left: 0 !important;
+}
+.scards{
+    padding: 8rem 3rem;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    background-color: black;
+    background-image: linear-gradient(0.4turn, black, black,black,purple);
+    margin-bottom: -8rem;
+    transition: all 1s ease;
+}
+
+.scards:nth-child(odd){
+    background-color: white;
+    background-image: linear-gradient(0.55turn, white, white,white,pink);
+    color: black;
+}
+#first_scards{
+    margin-top: 1rem;
+    padding-bottom: 12rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    margin-bottom: -10rem;
+  }
+
+.spotlights>h1, .scards>h2{
+    text-align: center;
+}
+.scards>img{
+    display: block;
+    margin: 4rem auto;
+    max-width: 80vw;
+}
