@@ -121,7 +121,7 @@ a{
     position: fixed;
     left: 0;
     top: 50vh;
-    margin-top: -5rem;
+    margin-top: -9rem;
     border-radius: 2px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -186,7 +186,14 @@ a{
     color: white !important;
     background-color: #00acee !important;
 }
-
+.sidefb{
+    color: #0088cc !important;
+    animation: rollup 2.5s 1;
+}
+.sidefb:hover{
+    color: white !important;
+    background-color: #0088cc !important;
+}
 
 
 .hidden{
