@@ -1,0 +1,284 @@
+.cover {
+    text-align: center;
+    min-height: 85vh;
+    margin-top: 0.1rem;
+    width: 98.9vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0 !important;
+    background: url("../images/garuda/bg/garuda.webp") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.cover_text {
+    text-align: center;
+    min-height: 35vh;
+    vertical-align: bottom;
+    text-align: center;
+    background-color: rgba(50, 50, 50, 0.3);
+    backdrop-filter: blur(10px);
+    padding-left: 2rem;
+    font-size: .9rem;
+}
+
+.cover_text h1 {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    animation: rolldown 2s 1;
+}
+
+.cover_text a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.75rem;
+    display: inline-block;
+    margin: 0.5rem 0.3rem;
+}
+
+
+/* =======================download button============== */
+
+.button {
+    border-radius: .5rem;
+    background-color: rgba(31, 30, 30, 0.3);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1rem;
+    padding: 3%;
+    width: 30%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 2%;
+    outline: none;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -5%;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 10%;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/* ------------------------- End of Cover ----------------------------- */
+
+
+/* ==================================Start of Feature======================================== */
+
+.main-grid-div h1 {
+    text-align: center;
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 15%;
+}
+
+.grid-items {
+    text-align: center;
+    box-shadow: -1.75px -1.75px 10px 0px palevioletred, 2px 2px 10px 0px rgb(55, 55, 235);
+    margin: 5%;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.main-grid-div button {
+    box-shadow: -1.75px -1.75px 4px 0.75px palevioletred, 2px 2px 5px 1px rgb(55, 55, 235);
+    background-color: black;
+    color: white;
+    border-radius: .5rem;
+    padding: 2%;
+    /* margin-top: 5%; */
+    border: none;
+}
+
+.main-grid-div button:hover {
+    box-shadow: -2px -2px 10px 1px palevioletred, 2px 2px 10px 1px rgb(55, 55, 235);
+    cursor: pointer;
+    outline: none;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.grid-items2 {
+    text-align: center;
+    box-shadow: -1.75px -1.75px 10px 0px palevioletred, 2px 2px 10px 0px rgb(55, 55, 235);
+    padding: 5% 10% 5% 10%;
+    margin: 5% 5% 0 5%;
+    border-radius: 10px;
+}
+
+.item-table tr {
+    text-align: left;
+    height: 4rem;
+    padding: 10rem;
+    font-size: .9rem;
+}
+
+.item-table button {
+    padding: 8%;
+    width: 3.5rem;
+    font-size: .5rem;
+    margin-left: .5rem;
+}
+
+
+/* ==================================End of Feature======================================== */
+
+
+/* ------------ Special features - Scards ---------- */
+
+.spotlights {
+    margin: 5rem 0;
+    padding-left: 0 !important;
+}
+
+.scards {
+    padding: 2.5rem 2.5rem;
+    font-size: 0.9rem;
+    transition: all 1s ease;
+    color: white;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 20px rgba(78, 77, 78, 0.555);
+    background: linear-gradient(to bottom, black, black, black, rgba(128, 0, 128, 0.472), rgba(128, 0, 128, 0.472), rgba(128, 0, 128, 0.472));
+}
+
+.scards p {
+    text-align: justify;
+}
+
+.scards:nth-child(odd) {
+    color: white;
+    background: linear-gradient(to bottom, black, black, black, rgba(48, 94, 167, 0.5), rgba(48, 94, 167, 0.5), rgba(48, 94, 167, 0.5));
+}
+
+.spotlights>h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.scards h2 {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.flex-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    flex-direction: column;
+}
+
+.flex-div img {
+    max-width: 70vw;
+    min-width: 80vw;
+    filter: drop-shadow(0px 10px 20px rgb(0, 0, 0));
+    transition: all 1s ease 0.1s;
+    object-fit: cover;
+}
+
+.scards:hover img {
+    transform: scale(1.05);
+}
+
+.flex-div div:nth-child(1) {
+    width: 100%;
+}
+
+.floating-button {
+    position: fixed;
+    color: blue;
+    right: 2%;
+    bottom: 5%;
+    z-index: 5;
+}
+
+.floating-button button {
+    color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(241, 73, 73);
+    box-shadow: 0 0 1.5rem red;
+    border: none;
+    outline: none;
+    display: none;
+}
+
+.arrow {
+    border: solid rgba(255, 255, 255, 0.582);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.floating-button button:hover {
+    box-shadow: 0 0 2rem .5rem red;
+}
+
+
+/* 
+@media screen and (max-width:1000px) {
+    .button {
+        border-radius: .5rem;
+        background-color: rgba(31, 30, 30, 0.3);
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 1rem;
+        padding: 2%;
+        width: 30%;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 2%;
+        outline: none;
+    }
+    .flex-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 3rem;
+        flex-direction: column;
+    }
+    .flex-div img {
+        max-width: 65vw;
+        filter: drop-shadow(0px 10px 20px rgb(0, 0, 0));
+    }
+} */
